@@ -12,6 +12,18 @@
   cursor: pointer;
 }
 
+.AppContainer__task:nth-child(3n + 1){
+  background-color: #1b1b32 ;
+}
+
+.AppContainer__task:nth-child(3n + 2){
+  background-color: #2a2a40 ;
+}
+
+.AppContainer__task:nth-child(3n + 3){
+  background-color: #3b3b4f ;
+}
+
 .AppContainer__task--completed{
   background-color: #5a01a7;
   text-decoration: line-through;
