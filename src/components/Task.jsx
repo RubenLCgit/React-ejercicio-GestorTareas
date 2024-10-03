@@ -8,14 +8,14 @@ const Task = ({ id, text, completed, completeTask, deleteTask }) => {
     <div className={`${ (completed ? 'AppContainer__task--completed': " ").trimEnd() } AppContainer__task`}>
       <div
         className='AppContainer__textTask'
-        onClick={ completeTask(id) }
+        onClick={ () => completeTask(id) }
       >
         {text}
       </div>
       <div className='AppContainer__iconContainer'>
         <AiOutlineCloseCircle
           className='AppContainer__iconTask'
-          onClick={ deleteTask(id) }
+          onClick={ () => deleteTask(id) }
         />
       </div>
     </div>

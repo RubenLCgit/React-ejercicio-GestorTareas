@@ -21,6 +21,8 @@ const FormTask = (props) => {
       completed: false,
     }
 
+    setInput('')
+
     props.onSubmit(newTask);
 
   }
@@ -28,16 +30,17 @@ const FormTask = (props) => {
   return (
     <form
       className='AppContainer__formTask'
-      onSubmit={ handleForm }
+      onSubmit= { handleForm }
     >
       <input
         className='AppContainer__inputTask'
         type="text"
         placeholder='Write a new task ...'
         name='text'
+        value={ input }
         onChange={ handleChanges }
       />
-      <button className='AppContainer__buttonFormTask'>
+      <button className={`${(!input.trim() ? 'AppContainer__buttonFormTask--disabled' : '').trim()} AppContainer__buttonFormTask`} disabled = {!input.trim()}>
         Add task
       </button>
     </form>
@@ -45,7 +48,7 @@ const FormTask = (props) => {
 }
 
 FormTask.propTypes = {
-  onSubmit : PropTypes.func.isRequired,
+  onSubmit: PropTypes.func.isRequired,
 }
 
 export default FormTask

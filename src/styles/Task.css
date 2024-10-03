@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 500px;
+  width: 80%;
   min-height: 65px;
   background-color: #1b1b32;
   margin: 5px 0;
@@ -24,7 +24,7 @@
   background-color: #3b3b4f ;
 }
 
-.AppContainer__task--completed{
+.AppContainer__task--completed.AppContainer__task{
   background-color: #5a01a7;
   text-decoration: line-through;
 }

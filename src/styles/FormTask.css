@@ -3,10 +3,11 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  width: 80%;
 }
 
 .AppContainer__inputTask{
-  width: 350px;
+  width: 78%;
   font-size: 18px;
   background-color: whitesmoke;
   padding: 14px 32px 14px 16px;
@@ -16,6 +17,7 @@
 }
 
 .AppContainer__buttonFormTask{
+
   padding: 16px;
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
@@ -26,4 +28,8 @@
   background-color: #00471b;
   color: whitesmoke;
   text-transform: capitalize;
+}
+
+.AppContainer__buttonFormTask--disabled{
+  background-color: #00471b47;
 }
