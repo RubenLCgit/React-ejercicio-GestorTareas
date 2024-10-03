@@ -1,10 +1,13 @@
 import './App.css'
+import Logo from './components/Logo'
+import MainApp from './components/MainApp'
 
 function App() {
   return (
 
-    <div>
-      
+    <div className='AppContainer'>
+      <Logo />
+      <MainApp />
     </div>
 
   )
